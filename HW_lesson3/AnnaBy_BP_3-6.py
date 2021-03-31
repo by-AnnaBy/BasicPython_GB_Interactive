@@ -14,6 +14,11 @@
 
 
 def int_func(word):
+    """
+    Делает первую букву в слове заглавной
+    :param word: слово из маленьких латинских букв
+    :return: исходное слово с прописной первой буквой
+    """
     symbols = list(word)
     symbols[0] = symbols[0].upper()
     return ''.join(symbols)
@@ -23,6 +28,11 @@ print(int_func('word'))
 
 
 def string_convert(string):
+    """
+    Выводит на экран исходную строку, но каждое слово должно начинаться с заглавной буквы.
+    :param string: строка из слов, разделенных пробелом
+    :return: None
+    """
     words = []
     for element in string.split(' '):
         words.append(int_func(element))
